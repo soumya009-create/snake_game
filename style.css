@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  color: aliceblue;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+main .start {
+  position: fixed;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .start .start-game {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+main .start .start-game .game {
+  padding: 20px 30px;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+main .start .start-game .game:hover {
+  background-color: #759dd5;
+  color: rgb(59, 216, 177);
+  border: 2px solid aqua;
+}
+main .start .start-game h3 {
+  font-size: xx-large;
+  letter-spacing: 10px;
+  color: aqua;
+}
+main .start .game-over {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  position: absolute;
+  display: none;
+}
+main .start .game-over .restart {
+  padding: 20px 30px;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+main .start .game-over .restart:hover {
+  background-color: #759dd5;
+  color: rgb(59, 216, 177);
+  border: 2px solid aqua;
+}
+main .start h3 {
+  font-size: xx-large;
+  letter-spacing: 10px;
+  color: aqua;
+}
+main .section {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+main .section #info {
+  border: 0.5px solid whitesmoke;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+main .board {
+  border: 0.5px solid white;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(30px, 1fr));
+  flex-grow: 1;
+}
+main .board .block {
+  border: 0.1px solid rgb(195, 187, 187);
+}
+main .board .snake_color {
+  background-color: #84c9de;
+  border-radius: 10px;
+}
+main .board .food_color {
+  background: url("https://i.pinimg.com/1200x/35/0c/87/350c873ee3368b736f649f70de250387.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=style.css.map */

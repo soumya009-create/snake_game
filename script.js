@@ -116,7 +116,7 @@ function main() {
         intervalId = setInterval(() => {
 
             showSnake()
-        }, 400);
+        }, 200);
     })
 
     restart.addEventListener("click", () => {
@@ -133,7 +133,7 @@ function main() {
         foods = { x: Math.floor(Math.random() * rows), y: Math.floor(Math.random() * cols) }
         intervalId = setInterval(() => {
             showSnake()
-        }, 400);
+        }, 200);
 
 
     })
